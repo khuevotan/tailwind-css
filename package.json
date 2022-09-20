@@ -1,0 +1,25 @@
+{
+  "name": "tailwind-css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tailwind": "tailwind build -i src/tailwind.css -o public/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khuevotan/tailwind-css.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khuevotan/tailwind-css/issues"
+  },
+  "homepage": "https://github.com/khuevotan/tailwind-css#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.11",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.1.8"
+  }
+}
