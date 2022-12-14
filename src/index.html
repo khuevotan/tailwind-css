@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>Tailwind</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <!-- container -->
+      <div class="container mx-auto px-10">
+        <nav class="flex justify-between items-center py-5">
+          <!-- logo -->
+          <div class="w-32 md:w-full z-20">
+            <img src="img/logo.png" alt="website logo" />
+          </div>
+          <!-- link  -->
+          <ul id="menu" class="invisible md:visible c-menu">
+            <li class="m-12 md:m-0"><a class="c-link" href="#">Home</a></li>
+            <li class="m-12 md:m-0"><a class="c-link" href="#">Product</a></li>
+            <li class="m-12 md:m-0"><a class="c-link" href="#">FAQ</a></li>
+            <li class="m-12 md:m-0"><a class="c-link" href="#">Contact</a></li>
+          </ul>
+          <!-- menu button -->
+          <div id="menu-button" class="z-20 md:hidden cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-8 h-8"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- banner -->
+    <section>
+      <div
+        class="w-full bg-no-repeat bg-cover relative h-custom"
+        style="background-image: url('./img/banner1.png')"
+      >
+        <div
+          class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 text-white text-center"
+        >
+          <!-- tag -->
+          <p class="text-xl mb-5">Food app</p>
+          <!-- title -->
+          <h1
+            class="text-4xl mb-5 font-bold max-w-2xl md:leading-relaxed md:text-5xl"
+          >
+            Why stay hungry when you can order form Bella Onojie
+          </h1>
+          <!-- describe -->
+          <p class="text-xl mb-5 font-light">
+            Download the bella onoje’s food app now on
+          </p>
+          <!-- button -->
+          <div>
+            <button
+              class="mx-4 border border-transparent bg-red-500 px-10 py-3 rounded-full hover:bg-transparent hover:border-white transition-all"
+            >
+              Playstore
+            </button>
+            <button
+              class="mx-4 border border-white bg-transparent px-10 py-3 rounded-full hover:bg-red-500 hover:border-transparent transition-all"
+            >
+              App store
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- App Image  -->
+    <section class="relative">
+      <div
+        class="absolute top-1/2 left-1/2 transform -translate-x-2/3 -translate-y-1/4"
+      >
+        <!-- Mac dinh hinh anh trong Tailwind la 100% nen ta se set lai bang cach dung max-w-none -->
+        <img
+          src="img/banner2.png"
+          alt="phone app screens"
+          class="max-w-none w-screen pl-20 md:w-auto"
+        />
+      </div>
+    </section>
+
+    <!-- App steps -->
+    <section class="pt-96 mt-28 sm:pt-40-c md:mt-0">
+      <!-- container -->
+      <div class="container mx-auto px-4">
+        <hr class="w-4/5 mx-auto h-0.5 bg-gray-200 md:w-2/5" />
+        <h2 class="text-center text-4xl font-semibold py-10">
+          How the app works
+        </h2>
+        <!-- step 1 -->
+        <div
+          class="flex flex-col justify-evenly items-center py-10 md:flex-row"
+        >
+          <!-- img  -->
+          <div class="text-center mb-10">
+            <img src="img/banner3.png" alt="app screen" />
+          </div>
+          <!-- text  -->
+          <div class="text-center md:text-left">
+            <!-- tag -->
+            <span class="text-red-500 font-semibold">Create an account</span>
+            <!-- title -->
+            <h2
+              class="text-4xl text-blue-900 font-bold max-w-md leading-relaxed py-5"
+            >
+              Create/login to an existing account to get started
+            </h2>
+            <!-- desc  -->
+            <p
+              class="text-xl text-gray-500 font-light max-w-sm mx-auto md:mx-0"
+            >
+              An account is created with your email and a desired password
+            </p>
+          </div>
+        </div>
+
+        <!-- step 2 -->
+        <div
+          class="flex flex-col justify-evenly items-center py-10 md:flex-row"
+        >
+          <!-- img  -->
+          <div class="text-center mb-10 order-1 md:order-2">
+            <img src="img/banner4.png" alt="app screen" />
+          </div>
+          <!-- text  -->
+          <div class="text-center md:text-left order-2 md:order-1">
+            <!-- tag -->
+            <span class="text-red-500 font-semibold">Create an account</span>
+            <!-- title -->
+            <h2
+              class="text-4xl text-blue-900 font-bold max-w-md leading-relaxed py-5"
+            >
+              Create/login to an existing account to get started
+            </h2>
+            <!-- desc  -->
+            <p
+              class="text-xl text-gray-500 font-light max-w-sm mx-auto md:mx-0"
+            >
+              An account is created with your email and a desired password
+            </p>
+          </div>
+        </div>
+
+        <!-- step 3 -->
+        <div
+          class="flex flex-col justify-evenly items-center py-10 md:flex-row"
+        >
+          <!-- img  -->
+          <div class="text-center mb-10">
+            <img src="img/banner5.png" alt="app screen" />
+          </div>
+          <!-- text  -->
+          <div class="text-center md:text-left">
+            <!-- tag -->
+            <span class="text-red-500 font-semibold">Create an account</span>
+            <!-- title -->
+            <h2
+              class="text-4xl text-blue-900 font-bold max-w-md leading-relaxed py-5"
+            >
+              Create/login to an existing account to get started
+            </h2>
+            <!-- desc  -->
+            <p
+              class="text-xl text-gray-500 font-light max-w-sm mx-auto md:mx-0"
+            >
+              An account is created with your email and a desired password
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download  -->
+    <section>
+      <!-- background  -->
+      <div
+        class="relative w-full h-custom bg-no-repeat bg-cover"
+        style="background-image: url('./img/banner6.png')"
+      >
+        <div
+          class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white z-10"
+        >
+          <!-- title  -->
+          <h1
+            class="text-4xl mb-5 font-bold max-w-2xl md:leading-relaxed md:text-5xl"
+          >
+            Download the app now.
+          </h1>
+          <!-- des -->
+          <p class="text-xl mb-5 font-light">
+            Available on your favorite store. Start your premium experience now
+          </p>
+          <!-- button  -->
+          <div class="flex justify-center">
+            <button
+              class="mx-4 border border-transparent bg-red-500 px-10 py-3 rounded-full hover:bg-transparent hover:border-white transition-all"
+            >
+              Playstore
+            </button>
+            <button
+              class="mx-4 border border-white bg-transparent px-10 py-3 rounded-full hover:bg-red-500 hover:border-transparent transition-all"
+            >
+              App store
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer  -->
+    <section>
+      <!-- container  -->
+      <div class="container mx-auto px-4">
+        <div
+          class="flex flex-col justify-between items-center py-5 md:flex-row"
+        >
+          <!-- logo -->
+          <div class="w-32 md:w-full">
+            <img src="img/logo2.png" alt="websitelogo" />
+          </div>
+
+          <!-- contact  -->
+          <div
+            class="flex items-center mt-5 text-gray-500 w-full justify-center md:justify-end"
+          >
+            <!-- phone  -->
+            <a href="tel:901234567" class="flex mx-4">
+              <!-- icon -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-red-500 mr-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
+                />
+              </svg>
+
+              <!-- number -->
+              <p>90-123-4567</p>
+            </a>
+            <!-- email  -->
+            <a href="mailto:info@me.com" class="flex mx-4">
+              <!-- icon -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-red-500 mr-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                />
+              </svg>
+
+              <!-- address  -->
+              <p>info@me.com</p>
+            </a>
+          </div>
+        </div>
+        <!-- copy -->
+        <div class="text-center my-4">
+          <p class="text-gray-500">Copy &copy; 2020.com</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- main js  -->
+    <script src="main.js"></script>
+  </body>
+</html>
